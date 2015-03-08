@@ -79,6 +79,7 @@ class ImageFieldFormatter extends FileFieldFormatter {
       '#description' => $this->t('This text will be used by screen readers, search engines, or when the image cannot be loaded.'),
       '#parents' => array('attributes', 'alt'),
       // @see http://www.gawds.org/show.php?contentid=28
+      '#required' => TRUE,
       '#maxlength' => 512,
     );
     $form['title'] = array(
